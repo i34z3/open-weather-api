@@ -30,7 +30,3 @@ def get_cached():
         return jsonify("Maximum of 5 entries by default.")
     cached_cities = cache.get("city")
     return jsonify(cached_cities)
-
-
-if __name__ == '__main__':
-    app.run(debug=True)
