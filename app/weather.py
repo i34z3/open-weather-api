@@ -3,15 +3,14 @@ import requests
 from flask import Flask, request, jsonify
 from flask_caching import Cache
 
-
 from dotenv import load_dotenv
 load_dotenv()
 
 
-app = Flask(__name__)
+app = Flask('app')
 
 
-app.config.from_object('settings')
+app.config.from_object('app.settings')
 cache = Cache(app)
 
 @app.route('/weather/<city>', methods=['GET'])
