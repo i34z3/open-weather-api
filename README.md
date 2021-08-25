@@ -2,6 +2,8 @@
 
 ## Running the app using Docker
 
+    # An API_KEY was created at .env
+
     # Build Docker container
     sudo docker-compose build
 
